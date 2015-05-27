@@ -75,7 +75,7 @@ $(document).ready(function () {
         $('nav a').each(function () {
             var currentLink = $(this);
             var refElement = $(currentLink.attr("href"));
-            if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.outerHeight() > scrollPosition) {
+            if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.outerHeight( true ) > scrollPosition) {
                 $('nav ul li a').removeClass("active");
                 currentLink.addClass("active");
             }

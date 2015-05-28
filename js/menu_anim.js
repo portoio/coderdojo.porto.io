@@ -56,7 +56,8 @@ $(document).ready(function () {
         $('nav a').each(function () {
             var currentLink = $(this);
             var refElement = $(currentLink.attr("href"));
-            if (refElement.position().top <= (scrollPosition + 50) && refElement.position().top + refElement.outerHeight( true ) > scrollPosition) {
+            var header_height = $('#header').height();
+            if (refElement.position().top <= (scrollPosition + header_height) && refElement.position().top + refElement.outerHeight( true ) > scrollPosition) {
                 $('nav ul li a').removeClass("active");
                 currentLink.addClass("active");
             }

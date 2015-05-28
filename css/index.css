@@ -36,7 +36,7 @@ html {
 #home .masthead .image {
   position: absolute;
   left: 0%;
-  bottom: -40px;
+  bottom: -20px ;
 }
 
 /*--------------
@@ -93,6 +93,7 @@ nav > * {
 .active {
   border-bottom: solid 3px;
     border-color: #3b83c0;
+    padding-bottom: 3px,
   }
 /*--------------
     Ribbons

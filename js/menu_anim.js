@@ -1,6 +1,9 @@
+// this will allow the menu to reduce size once scrolling
 $(function(){
     $('#header').data('size','big');
 });
+
+//this will reduce the header size if big -> small
 $(window).scroll(function(){
     if($(document).scrollTop() > 0)
     {
@@ -13,6 +16,7 @@ $(window).scroll(function(){
         }
     }
     else
+//this will increase the header size if small -> big
     {
         if($('#header').data('size') == 'small')
         {
@@ -23,30 +27,7 @@ $(window).scroll(function(){
         }  
     }
 });
-$(document).ready(function(){
-    
-    $('.scroll').click(function(event) {
-        event.preventDefault();
- 
-        var full_url = this.href;
-        
-        var parts = full_url.split('#');
-        var trgt = parts[1];
-
-        var target_offset = $('#'+trgt).offset();
-        var target_top = target_offset.top;
-
-        $('html, body').animate({scrollTop:target_top}, 500);
-
-
-    });
-    
-    $('nav#main a').click(function(){
-         $('nav#main a').removeClass('active');
-         $(this).addClass('active');
-    });
-    
-});
+//adds the class "active" if on section 
 $(document).ready(function () {
         $(document).on("scroll", onScroll);
  
@@ -62,20 +43,20 @@ $(document).ready(function () {
             var target = this.hash;
             $target = $(target);
             $('html, body').stop().animate({
-                'scrollTop': $target.offset().top+2
+                'scrollTop': $target.offset().top
             }, 500, 'swing', function () {
                 window.location.hash = target;
                 $(document).on("scroll", onScroll);
             });
         });
     });
- 
+    //this is going to detect Scrollpositon and add class active or remove it depending of section 
     function onScroll(event){
         var scrollPosition = $(document).scrollTop();
         $('nav a').each(function () {
             var currentLink = $(this);
             var refElement = $(currentLink.attr("href"));
-            if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.outerHeight( true ) > scrollPosition) {
+            if (refElement.position().top <= (scrollPosition + 50) && refElement.position().top + refElement.outerHeight( true ) > scrollPosition) {
                 $('nav ul li a').removeClass("active");
                 currentLink.addClass("active");
             }
@@ -84,3 +65,6 @@ $(document).ready(function () {
             }
         });
     }
+$("#coderdojo").on("click", function() {
+    $("body").scrollTop(0);
+});

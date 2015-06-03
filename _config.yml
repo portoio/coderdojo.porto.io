@@ -1,0 +1,20 @@
+# Site settings
+title: CoderDojo Porto
+email: cpm.miguelpereira@gmail.com
+description: "Site Description"
+logo_location: "http://cdn.altrn.tv/icons/code-school_21813.png"
+
+#baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+highlighter: pygments
+
+#Other Global Configuration
+exclude: ['README.md']
+
+assets_path: /assets

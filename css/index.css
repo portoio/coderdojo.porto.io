@@ -21,8 +21,8 @@ html {
 
 #home .masthead {
   background-image: url(images/bg.jpg);
-  margin: 0em;
-  padding: 5rem 0rem;
+  height: 450px;
+  margin: 3rem 0 0 0;
 }
 #home .masthead .column {
   position: relative;
@@ -36,8 +36,65 @@ html {
 #home .masthead .image {
   position: absolute;
   left: 0%;
-  bottom: -30px;
+  bottom: -20px ;
 }
+
+/*--------------
+    header
+---------------*/
+#header {
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  height: 90px;
+  top: 0;
+  border-bottom: 3px solid;
+  border-color: #3b83c0; 
+}
+nav {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+#header img {
+  display: inline-block;
+  left: 0;
+  width: 45px;
+  height: 45px; 
+}
+.list{
+  display: inline-block;
+  left: 65px;
+}
+nav > * {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  margin-left:-5px;
+  margin-right:-5px;
+}
+.list ul{
+}.list ul li{
+  display: inline;
+  margin-left: 0px;
+  padding-left: 40px;
+}.list ul li a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+}
+.list a:hover{
+  color: #666666;
+  font-size: 16px;
+}
+.active {
+  border-bottom: solid 3px;
+    border-color: #3b83c0;
+    padding-bottom: 3px,
+  }
 
 /*--------------
     Ribbons
@@ -49,7 +106,7 @@ html {
 }
 
 #home .vertical.segment {
-  padding: 12rem 0rem;
+  padding: 6rem 0rem;
 }
 
 #home .feature.segment {

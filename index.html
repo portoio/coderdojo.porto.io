@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <!-- Site Properities -->
-  <title>Homepage Example - Semantic</title>
+  <title>CoderDojo - Porto</title>
 
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -15,42 +14,46 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
   <script src="semantic/dist/semantic.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/menu_anim.js"></script>
 
 </head>
-<body id="home">
-  <div class="ui masthead segment" id="coderdojo" >
-    <div class="ui page grid">
-      <div class="column">
-          <div class="ui menu">
-            <a class="active blue item" href="#coderdojo">
-              <i class="home icon"></i> CoderDojo
-            </a>
-            <a class="red item" href="#eventos">
-              <i class="calendar icon"></i> Eventos
-            </a>
-            <a class="blue item" href="#aprender">
-              <i class="user icon"></i> O que vais aprender
-            </a>
-            <a class="orange item" href="#mentor">
-              <i class="home icon"></i> Ser um mentor
-            </a>
-            <a class="purple item" href="#contatos">
-              <i class="mail icon"></i> Contatos
-            </a>
+
+  <body id="home">
+
+  <div id="header">
+    <nav id="main">
+      <img src="images/logo.png">
+      <div class="list">
+        <ul class="list">
+          <li><a class="scroll" data-scroll="coderdojo" href="#coderdojo">Home</a></li>
+          <li><a class="scroll" data-scroll="eventos" href="#eventos">Eventos</a></li>
+          <li><a class="scroll" data-scroll="aprender" href="#aprender">O que vais aprender</a></li>
+          <li><a class="scroll" data-scroll="mentor" href="#mentor">Ser um Mentor</a></li>
+          <li><a class="scroll" data-scroll="contatos" href="#contatos">Contatos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+  <div id="section">
+    <section class="ui masthead segment" id="coderdojo" >
+      <div class="ui page grid">
+        <div class="column">
+         <img src="images/logo.png" class="ui medium image">
+          <div class="ui hidden transition information">
+            <h1 class="ui blue header">
+              Sobre o Coderdojo
+            </h1>
+            <p>CoderDojo is a global movement of free, volunteer-led,  community based programming clubs for young people. At a Dojo, young people, between 7 and 17, learn how to code, develop websites, apps, programs, games and explore technology in an informal and creative environment. In addition to learning to code attendees meet like minded people and are exposed to the possibilities of technology.</p>
           </div>
-        <img src="images/logo.png" class="ui medium image">
-        <div class="ui hidden transition information">
-          <h1 class="ui blue header">
-            Sobre o Coderdojo
-          </h1>
-          <p>CoderDojo is a global movement of free, volunteer-led,  community based programming clubs for young people. At a Dojo, young people, between 7 and 17, learn how to code, develop websites, apps, programs, games and explore technology in an informal and creative environment. In addition to learning to code attendees meet like minded people and are exposed to the possibilities of technology.</p>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
 
-  <div class="ui blue inverted vertical segment" id="eventos" >
+
+
+   <section class="ui blue inverted vertical segment" id="eventos" data-anchor="eventos">
     <div class="ui very relaxed stackable page grid">
       <div class="row">
         <div class="column">
@@ -78,13 +81,15 @@
           </div>
         </div>
         <div class="six wide column">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3004.4263616054745!2d-8.614004!3d41.14704700000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2464e2faa75095%3A0xace2178567e6a944!2sPorto+i%2Fo!5e0!3m2!1spt-PT!2spt!4v1432136706508" width="350" height="250" frameborder="0" style="border:0"></iframe>
+            <iframe width="350" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-8.615882992744446%2C41.14579190990075%2C-8.61229419708252%2C41.14814292040175&amp;layer=mapnik&amp;marker=41.14696742568806%2C-8.614088594913483" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=41.14697&amp;mlon=-8.61409#map=18/41.14697/-8.61409">Ver mapa maior</a></small>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-<div class="ui vertical feature segment" id="aprender">
+
+
+  <section class="ui vertical feature segment" id="aprender" data-anchor="aprender">
     <div class="ui centered page grid">
       <div class="fourteen wide column">
       <div class="column"><h1 class="center aligned ui header">O que vais aprender</h1></div>
@@ -122,20 +127,20 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="ui blue inverted vertical segment" id="mentor" >
+  <section class="ui blue inverted vertical segment" id="mentor" data-anchor="mentor">
     <div class="ui stackable center aligned page grid">
         <div class="ui basic animated inverted massive button button">
             <div class="inverted visible content">Ser um Mentor</div>
             <div class="hidden content"><i class="right arrow icon"></i></div>
         </div>
     </div>
-  </div>
+  </section>
 
-  <div class="ui vertical segment">
+  <section class="ui vertical segment" id="contatos" data-anchor="contatos" >
     <div class="column"><h1 class="center aligned ui header">Encontra-nos</h1></div>
-      <div class="ui five column center aligned stackable grid">
+      <div class="ui five column center aligned stackable page grid">
         <div class="column">
           <div class="ui icon header">
             <i class="big twitter icon"></i>
@@ -155,9 +160,9 @@
           <p></p>
         </div>
       </div>        
-  </div>
+  </section>
 
-  <div class="ui inverted footer vertical segment" id="contatos" >
+  <section class="ui inverted footer vertical segment" id="contatos" data-anchor="contatos"  >
     <div class="ui stackable center aligned page grid">
       <div class="ten wide column">
         <div class="ui three column center aligned stackable grid">
@@ -196,6 +201,7 @@
         <p>(404) 867-5309</p>
       </div>
     </div>
-  </div>
+  </section>
+</div>  
 </body>
 </html>

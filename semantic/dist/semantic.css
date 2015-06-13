@@ -2141,6 +2141,13 @@ input::selection {
   box-shadow: 0px 0px 0px 2px rgba(39, 41, 43, 0.15) inset !important;
   color: rgba(0, 0, 0, 0.6) !important;
 }
+.ui.basic.blue-dojo.buttons .button:hover,
+.ui.basic.blue-dojo.button:hover {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 2px #52bab5 inset !important;
+  color: #52bab5 !important;
+}
+
 
 .ui.basic.blue.buttons .button:hover,
 .ui.basic.blue.button:hover {
@@ -5200,10 +5207,13 @@ a.ui.black.header:hover {
   color: #1b1c1d !important;
 }
 
+.ui.blue-dojo.header {
+  color: #52bab5 !important;
+}
+
 .ui.blue.header {
   color: #3b83c0 !important;
 }
-
 a.ui.blue.header:hover {
   color: #458ac6 !important;
 }
@@ -12804,6 +12814,11 @@ ol.ui.horizontal.list li:before,
 .ui.inverted.segment,
 .ui.inverted.black.segment {
   background-color: #1b1c1d !important;
+  color: #ffffff !important;
+}
+
+.ui.inverted.blue-dojo.segment {
+  background-color: #52bab5 !important;
   color: #ffffff !important;
 }
 

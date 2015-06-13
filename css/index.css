@@ -57,7 +57,7 @@ html {
   height: 90px;
   top: 0;
   border-bottom: 3px solid;
-  border-color: #3b83c0; 
+  border-color: #52bab5; 
 }
 nav {
   position: relative;
@@ -98,7 +98,7 @@ nav > * {
 }
 .active {
   border-bottom: solid 3px;
-    border-color: #3b83c0;
+    border-color: #52bab5;
     padding-bottom: 3px,
   }
 

@@ -6,7 +6,9 @@ html {
   font-size: 14px;
 }
 
-
+#aprender p{
+  text-align: justify;
+}
 /*******************************
             Global
 *******************************/
@@ -24,6 +26,10 @@ html {
   height: 450px;
   margin: 3rem 0 0 0;
 }
+#home .masthead p {
+  text-align: justify;  
+}
+
 #home .masthead .column {
   position: relative;
 }

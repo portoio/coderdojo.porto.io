@@ -51,10 +51,6 @@
     </div>
   </div>
 
-<pre>{{site.data | debug}}</pre>
-
-
-
   <div class="ui blue inverted vertical segment" id="eventos" >
     <div class="ui very relaxed stackable page grid">
       <div class="row">
@@ -75,10 +71,11 @@
           <div class="ui section inverted divider"></div>
           <h3 class="ui inverted header">Outros Eventos</h3>
           <div class="ui animated inverted selection list">
+          {% for evento in site.data.eventos %}
             <div class="item">
-              Ultimo Evento
-              <div class="right floated">Maio 16, 2015</div>
+              <a href='{{ evento.photos }}' target='_blank' title='{{ evento.date }}'>{{ evento.date }}</a>
             </div>
+          {% endfor %}
             
           </div>
         </div>

@@ -27,7 +27,7 @@ html {
   margin: 3rem 0 0 0;
 }
 #home .masthead p {
-  text-align: justify;  
+  text-align: justify;
 }
 
 #home .masthead .column {
@@ -57,7 +57,7 @@ html {
   height: 90px;
   top: 0;
   border-bottom: 3px solid;
-  border-color: #52bab5; 
+  border-color: #52bab5;
 }
 nav {
   position: relative;
@@ -69,7 +69,7 @@ nav {
   display: inline-block;
   left: 0;
   width: 45px;
-  height: 45px; 
+  height: 45px;
 }
 .list{
   display: inline-block;
@@ -129,6 +129,14 @@ nav > * {
 
 #home .logo.row {
   height: 10rem;
+}
+
+/*--------------
+    Social
+---------------*/
+
+.ui.icon.header:hover .icon {
+  color: #52bab5;
 }
 
 /*--------------

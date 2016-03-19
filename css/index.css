@@ -23,7 +23,7 @@ html {
 
 #home .masthead {
   background-image: url(images/bg.jpg);
-  height: 450px;
+  min-height: 450px;
   margin: 4rem 0 0 0;
 }
 #home .masthead p {
@@ -63,7 +63,8 @@ nav {
 #header img {
   display: inline-block;
   left: 0;
-  height: 50px;
+  width: 30%;
+  max-width: 210px;
   vertical-align: middle;
 }
 .list{
@@ -78,16 +79,22 @@ nav > * {
   margin-right:-5px;
 }
 .list ul{
-}.list ul li{
+}
+.list ul li{
   display: inline;
   margin-left: 0px;
-  padding-left: 40px;
-}.list ul li a{
+  padding-left: 20px;
+  white-space: nowrap;
+}
+.list ul li:first-of-type{
+  padding: 0;
+}
+.list ul li a{
   text-decoration: none;
   color: #000000;
   font-size: 16px;
 }
-.list ul li a:first-of-type{
+.list ul li:first-of-type a{
   border: none;
 }
 .list a:hover{
@@ -152,7 +159,23 @@ nav > * {
 *******************************/
 
 /* Mobile Only */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
+
+  nav {
+    width: 100%;
+  }
+
+  #header img {
+    width: 110px;
+  }
+
+  .list ul li{
+    padding-left: 10px;
+  }
+
+  .list ul li:first-of-type{
+    padding-left: 10px;
+  }
 
   #home .menu .right.menu > .item {
     display: none;
@@ -170,12 +193,12 @@ nav > * {
     font-size: 1.5em;
   }
 
-  #home .masthead.segment .information {
-    margin-left: 170px;
+  #home .masthead.segment .ten.wide.column {
+    width: 100% !important;
   }
 
-  #home .masthead.segment .image {
-    width: 170px;
+  #home .masthead.segment .six.wide.column {
+    display: none;
   }
 
   #home .masthead.segment .button {
@@ -188,10 +211,6 @@ nav > * {
 
   #home .overview .divided.grid .header + p {
     min-height: 0px;
-  }
-
-  #home .masthead.segment .column {
-    font-size: 0.7rem;
   }
 
   #home .selection.list .right.floated {

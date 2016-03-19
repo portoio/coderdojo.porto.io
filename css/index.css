@@ -24,25 +24,20 @@ html {
 #home .masthead {
   background-image: url(images/bg.jpg);
   height: 450px;
-  margin: 3rem 0 0 0;
+  margin: 4rem 0 0 0;
 }
 #home .masthead p {
   text-align: justify;
 }
 
-#home .masthead .column {
-  position: relative;
-}
 #home .masthead .information {
-  margin: 10em 1em 1em 350px;
+  margin-top: 100px;
 }
 #home .masthead .information p {
   max-width: 600px;
 }
 #home .masthead .image {
-  position: absolute;
-  left: 0%;
-  bottom: -20px ;
+  margin-top: 50px;
 }
 
 /*--------------
@@ -68,12 +63,12 @@ nav {
 #header img {
   display: inline-block;
   left: 0;
-  width: 45px;
-  height: 45px;
+  height: 50px;
+  vertical-align: middle;
 }
 .list{
   display: inline-block;
-  left: 65px;
+  left: 0;
 }
 nav > * {
   position: absolute;
@@ -91,6 +86,9 @@ nav > * {
   text-decoration: none;
   color: #000000;
   font-size: 16px;
+}
+.list ul li a:first-of-type{
+  border: none;
 }
 .list a:hover{
   color: #666666;
@@ -171,6 +169,7 @@ nav > * {
   #home h1 {
     font-size: 1.5em;
   }
+
   #home .masthead.segment .information {
     margin-left: 170px;
   }
@@ -193,10 +192,6 @@ nav > * {
 
   #home .masthead.segment .column {
     font-size: 0.7rem;
-  }
-
-  #home .masthead.segment .column p {
-    display: none;
   }
 
   #home .selection.list .right.floated {

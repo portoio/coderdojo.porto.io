@@ -11,7 +11,7 @@ $(window).scroll(function(){
         {
             $('#header').data('size','small');
             $('#header').stop().animate({
-                height:'50px'
+                height:'60px'
             },600);
         }
     }
@@ -24,22 +24,22 @@ $(window).scroll(function(){
             $('#header').stop().animate({
                 height:'100px'
             },600);
-        }  
+        }
     }
 });
-//adds the class "active" if on section 
+//adds the class "active" if on section
 $(document).ready(function () {
         $(document).on("scroll", onScroll);
- 
+
         $('a[href^="#"]').on('click', function (e) {
             e.preventDefault();
             $(document).off("scroll");
- 
+
             $('a').each(function () {
                 $(this).removeClass('active');
             })
             $(this).addClass('active');
- 
+
             var target = this.hash;
             $target = $(target);
             $('html, body').stop().animate({
@@ -50,7 +50,7 @@ $(document).ready(function () {
             });
         });
     });
-    //this is going to detect Scrollpositon and add class active or remove it depending of section 
+    //this is going to detect Scrollpositon and add class active or remove it depending of section
     function onScroll(event){
         var scrollPosition = $(document).scrollTop();
         $('nav a').each(function () {

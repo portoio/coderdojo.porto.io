@@ -6,9 +6,23 @@ html {
   font-size: 14px;
 }
 
-#aprender p{
+#aprender p {
   text-align: justify;
 }
+
+#eventos iframe {
+  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 0.2857rem;
+}
+
+#mentor p {
+  text-align: justify;
+}
+
+#mentor .button {
+  margin-top: 1em;
+}
+
 /*******************************
             Global
 *******************************/

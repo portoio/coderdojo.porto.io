@@ -36,7 +36,6 @@ html {
 ---------------*/
 
 #home .masthead {
-  background-image: url(images/bg.jpg);
   min-height: 450px;
   margin: 4rem 0 0 0;
 }
